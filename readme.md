@@ -11,9 +11,10 @@ generating AI responses.
     2 . **Recipe Creator** – Generate cooking recipes based on ingredients.<br>
     3 . **Ask AI** – Ask general questions and get AI-powered responses.
 
-## 🌐 Live Demo(Full Stack - not included in the repo)
+## 🌐 Deployed Full-Stack Application ([about](full-stack.md)) 
 
-The application is deployed and available for testing.
+⚠️ The full-stack application is not included in this repository.
+   The application is deployed and available for testing.
 
 ### 📝 Steps to Access:
 
@@ -21,9 +22,10 @@ The application is deployed and available for testing.
 2. **Confirm your email** to activate the account.
 3. **Login and test the AI integration**.
 
-🔗 **[Live App URL](https://my-ai-application.duckdns.org/)**
+🔗 **[Live Demo](https://ai.mamialex.ru/)**
 
-## 🛠️ Technologies Used
+
+## 🛠️ Technologies Used 
 
 - **Spring Boot**
 - **Spring AI** (`spring-ai-openai-spring-boot-starter`)

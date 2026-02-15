@@ -29,27 +29,13 @@ public class GenAiController {
     return chatService.getResponse(prompt);
   }
 
-  @GetMapping("/ask-ai-options")
-  public String getResponseOptions(@RequestParam String prompt) {
-    return chatService.getResponseOptions(prompt);
-  }
-
-  // Returns a redirection to one image url
-
-  /*    @GetMapping("/generate-image")
-        public void generateImages(HttpServletResponse response, @RequestParam String prompt) throws IOException {
-        ImageResponse imageResponse = imageService.generateImage(prompt);
-        String url = imageResponse.getResult().getOutput().getUrl();
-        response.sendRedirect(url);
-  }*/
 
   @GetMapping("/generate-image")
   public List<String> generateImages(@RequestParam String prompt,
-                                     @RequestParam(defaultValue = "hd") String quality,
                                      @RequestParam(defaultValue = "1") int n,
                                      @RequestParam(defaultValue = "1024") int width,
                                      @RequestParam(defaultValue = "1024") int height) throws IOException {
-    ImageResponse imageResponse = imageService.generateImage(prompt, quality, n, width, height);
+    ImageResponse imageResponse = imageService.generateImage(prompt, n, width, height);
 
     return imageResponse.getResults().stream()
         .map(result -> result.getOutput().getUrl())
