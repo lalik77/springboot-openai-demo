@@ -14,13 +14,12 @@ public class ImageService {
     this.openAiImageModel = openAiImageModel;
   }
 
-  public ImageResponse generateImage(String prompt, String quality, int n, int width, int height) {
+  public ImageResponse generateImage(String prompt, int n, int width, int height) {
     // ImageResponse imageResponse = openAiImageModel.call(new ImagePrompt(prompt));
     ImageResponse imageResponse = openAiImageModel.call(
         new ImagePrompt(prompt,
             OpenAiImageOptions.builder()
                 .model("dall-e-2")
-                .quality(quality)
                 .withN(n)
                 .width(width)
                 .height(height)
