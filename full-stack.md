@@ -25,7 +25,8 @@ Database layer
 Cloud hosting & deployment infrastructure
 
 ## 🛠️ Full-Stack Technologies Used
-🔹 Backend
+
+🔹 Backend - deployed on [Render](https://ai-app-sb-1-0.onrender.com/) (free tier)
 
 Spring Boot
 

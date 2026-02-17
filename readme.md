@@ -16,6 +16,8 @@ generating AI responses.
 ⚠️ The full-stack application is not included in this repository.
    The application is deployed and available for testing.
 
+📘 Cold Start Guide: [Render Cold Start Instructions](RENDER_COLD_START.md) 
+
 ### 📝 Steps to Access:
 
 1. **Register an account**.
@@ -23,6 +25,20 @@ generating AI responses.
 3. **Login and test the AI integration**.
 
 🔗 **[Live Demo](https://ai.mamialex.ru/)**
+
+⚙️ Backend Deployment Note
+
+The backend application is deployed on [Render](https://ai-app-sb-1-0.onrender.com/) (free tier).
+
+Because the service runs on a free hosting plan:
+
+The application may enter a sleep state after a period of inactivity.
+
+The first request after inactivity can take additional time (cold start).
+
+Response times may occasionally be slower compared to paid infrastructure.
+
+Once the service is awake, subsequent requests should respond normally.
 
 
 ## 🛠️ Technologies Used 
